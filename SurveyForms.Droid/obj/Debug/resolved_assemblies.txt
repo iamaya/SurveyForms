@@ -1,14 +1,14 @@
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\SurveyForms.Droid\bin\Debug\SurveyForms.Droid.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.CrossCore.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\SurveyForms.Core\bin\Debug\SurveyForms.Core.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\Microsoft.Net.Http.2.2.28\lib\monoandroid\System.Net.Http.Extensions.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\packages\Microsoft.Net.Http.2.2.28\lib\monoandroid\System.Net.Http.Primitives.dll
+U:\Android\SurveyForms\SurveyForms\SurveyForms.Droid\bin\Debug\SurveyForms.Droid.dll
+U:\Android\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.CrossCore.dll
+U:\Android\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll
+U:\Android\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll
+U:\Android\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll
+U:\Android\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.dll
+U:\Android\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll
+U:\Android\SurveyForms\SurveyForms\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll
+U:\Android\SurveyForms\SurveyForms\SurveyForms.Core\bin\Debug\SurveyForms.Core.dll
+U:\Android\SurveyForms\SurveyForms\packages\Microsoft.Net.Http.2.2.28\lib\monoandroid\System.Net.Http.Extensions.dll
+U:\Android\SurveyForms\SurveyForms\packages\Microsoft.Net.Http.2.2.28\lib\monoandroid\System.Net.Http.Primitives.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.Annotations.dll
@@ -55,4 +55,4 @@ C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.ReaderWriter.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.XDocument.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.XmlSerializer.dll
-C:\Users\imaya_000\Desktop\SurveyForms\SurveyForms\SurveyForms.Droid\bin\Debug\Newtonsoft.Json.dll
+U:\Android\SurveyForms\SurveyForms\SurveyForms.Droid\bin\Debug\Newtonsoft.Json.dll

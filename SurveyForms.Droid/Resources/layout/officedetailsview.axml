@@ -22,6 +22,6 @@
     <Mvx.MvxListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        local:MvxBind="ItemsSource AllOfficeDetails.ProductDetails"
+        local:MvxBind="ItemsSource AllOfficeDetails.ProductDetails; ItemClick NextScreenCommand"
         local:MvxItemTemplate="@layout/item_officedetailsview" />
 </LinearLayout>

@@ -19,4 +19,14 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         local:MvxBind="Text UserLastName" />
+<!--<Button
+        android:text="Select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextScreen"
+        android:background="@drawable/red_button"
+        local:MvxBind="Click NextScreenCommand"
+        android:clickable="true"
+        android:enabled="true"
+        android:width="50dp" />-->
 </LinearLayout>

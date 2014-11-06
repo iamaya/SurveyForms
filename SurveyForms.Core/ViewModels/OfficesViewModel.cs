@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace SurveyForms.Core.ViewModels
 {
@@ -26,6 +27,22 @@ namespace SurveyForms.Core.ViewModels
         {
             get { return _allOffices; }
             set { _allOffices = value; RaisePropertyChanged(() => AllOffices); }
+        }
+
+        private MvxCommand _nextScreenCommand;
+
+        public ICommand NextScreenCommand
+        {
+            get
+            {
+                _nextScreenCommand = _nextScreenCommand ?? new MvxCommand(DoNextScreenCommand);
+                return _nextScreenCommand;
+            }
+        }
+
+        private void DoNextScreenCommand()
+        {
+            ShowViewModel<OfficeDetailsViewModel>();
         }
     }
 }

@@ -136,6 +136,7 @@
     <AndroidResource Include="Resources\values\SplashStyle.xml" />
     <AndroidResource Include="Resources\values\MvxBindingAttributes.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\red_button.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SurveyForms.Core\SurveyForms.Core.csproj">

@@ -66,7 +66,10 @@ namespace SurveyForms.Droid
 			public const int Icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int splash = 2130837505;
+			public const int red_button = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int splash = 2130837506;
 			
 			static Drawable()
 			{
@@ -83,6 +86,9 @@ namespace SurveyForms.Droid
 			
 			// aapt resource value: 0x7f040000
 			public const int MvxBindingTagUnique = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int listView1 = 2130968577;
 			
 			static Id()
 			{
