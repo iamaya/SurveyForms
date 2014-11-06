@@ -1,0 +1,9 @@
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:local="http://schemas.android.com/apk/res/SurveyForms.Droid"><Mvx.MvxListView android:layout_width="fill_parent" android:layout_height="fill_parent" local:MvxBind="ItemsSource AllManifests" local:MvxItemTemplate="@layout/item_manifestsview"><!--<ListView.ItemTemplate>
+      <DataTemplate>
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        local:MvxBind="Text ServiceZone_Name" />
+      </DataTemplate>
+    </ListView.ItemTemplate>--></Mvx.MvxListView></LinearLayout>
