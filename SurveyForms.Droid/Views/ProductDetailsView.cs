@@ -20,7 +20,6 @@ namespace SurveyForms.Droid.Views
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.productdetailsview);
-            // Create your application here
         }
     }
 }

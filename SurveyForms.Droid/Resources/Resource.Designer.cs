@@ -87,6 +87,15 @@ namespace SurveyForms.Droid
 			// aapt resource value: 0x7f040000
 			public const int MvxBindingTagUnique = 2130968576;
 			
+			// aapt resource value: 0x7f040005
+			public const int button1 = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int button2 = 2130968582;
+			
+			// aapt resource value: 0x7f040004
+			public const int editText1 = 2130968580;
+			
 			// aapt resource value: 0x7f040003
 			public const int linearLayout1 = 2130968579;
 			

@@ -40,7 +40,10 @@ namespace SurveyForms.Core.ViewModels
 
 		public ICommand NextScreenCommand {
 			get {
-				return new MvxCommand<ProductDetail> (item => ShowViewModel<ProductDetailsViewModel> (new ProductDetailsViewModel.Nav (){ Id = item.ID, Id_ManifestDetail = item.ID_ManifestDetail }));
+				return new MvxCommand<ProductDetail> 
+					(item => ShowViewModel<ProductDetailsViewModel> 
+						(new ProductDetailsViewModel.Nav ()
+							{ Id = item.ID, Id_ManifestDetail = item.ID_ManifestDetail}));
 			}
 		}
 

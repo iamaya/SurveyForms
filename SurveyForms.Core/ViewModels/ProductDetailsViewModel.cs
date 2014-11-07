@@ -12,15 +12,28 @@ namespace SurveyForms.Core.ViewModels
 {
     public class ProductDetailsViewModel : MvxViewModel
     {
+		private readonly IOfficeDetailsService _service;
 
-        private ManifestDetail _productDetails;
-        public ManifestDetail ProductDetails
+
+		public ProductDetailsViewModel(IOfficeDetailsService service)
+		{
+			_service = service;
+		}
+
+		private ManifestDetail _manifestDetails;
+		public ManifestDetail ManifestDetails
         {
-			get { return _productDetails; }
-			set { _productDetails= value; RaisePropertyChanged(() => ProductDetails); }
+			get { return _manifestDetails; }
+			set { _manifestDetails= value; }
         }
 
-
+		private ProductDetail _productDetails;
+		public ProductDetail ProductDetails
+		{
+			get { return _productDetails; }
+			set { _productDetails= value; RaisePropertyChanged(() => ProductDetails); }
+		}
+			
 		public class Nav
 		{
 			public int Id {
@@ -32,12 +45,22 @@ namespace SurveyForms.Core.ViewModels
 				get;
 				set;
 			}
+
+//			public ProductDetail productDetail {
+//				get;
+//				set;
+//			}
 		}
 
 		public void Init (Nav navigation)
 		{
+			Task.Factory.StartNew (() => _service.InvokeAPIASync (navigation.Id_ManifestDetail.ToString ()))
+				.ContinueWith ((results) => {
+					ManifestDetails = results.Result.Result;
+					ProductDetails = ManifestDetails.ProductDetails.Find (item => item.ID == navigation.Id);
+				});
+
 
 		}
-
     }
 }

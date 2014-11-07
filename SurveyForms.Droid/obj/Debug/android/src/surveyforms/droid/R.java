@@ -65,6 +65,9 @@ containing a value of this type.
     }
     public static final class id {
         public static final int MvxBindingTagUnique=0x7f040000;
+        public static final int button1=0x7f040005;
+        public static final int button2=0x7f040006;
+        public static final int editText1=0x7f040004;
         public static final int linearLayout1=0x7f040003;
         public static final int listView1=0x7f040001;
         public static final int textView1=0x7f040002;

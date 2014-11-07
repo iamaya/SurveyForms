@@ -25,7 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:textColor="#ff0cbfcd" />
+        android:textColor="#ff33f457"
+        android:background="#ffede6e6" />
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -33,4 +34,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:text="Default" />
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_marginTop="25dp" />
 </LinearLayout>
