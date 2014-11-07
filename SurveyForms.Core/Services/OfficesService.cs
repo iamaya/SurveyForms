@@ -22,6 +22,8 @@ namespace SurveyForms.Core.Services
 
         public async Task<ManifestZonesPagedViewModel> InvokeAPIASync(string data)
         {
+			var url = "api/ManifestDetails/GetManifestDetailsByRefUserId/1/50/48d71237-e8a1-453e-9694-1384691f7a02!!System%20Administrator!!ALL!!" + data + "!!1/dump";
+
             var client = new HttpClient(
                      new HttpClientHandler
                      {
@@ -34,7 +36,7 @@ namespace SurveyForms.Core.Services
 
             client.BaseAddress = BaseUri;
 
-            var response = await client.GetAsync("api/ManifestDetails/GetManifestDetailsByRefUserId/1/20/48d71237-e8a1-453e-9694-1384691f7a02!!System%20Administrator!!ALL!!37!!1/dump");
+            var response = await client.GetAsync(url);
 
             var returnJson = response.Content.ReadAsStringAsync().Result;
             return JsonConvert.DeserializeObject<ManifestZonesPagedViewModel>(returnJson);

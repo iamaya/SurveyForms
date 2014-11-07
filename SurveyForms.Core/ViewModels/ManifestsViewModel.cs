@@ -10,38 +10,39 @@ using System.Windows.Input;
 
 namespace SurveyForms.Core.ViewModels
 {
-    public class ManifestsViewModel : MvxViewModel
-    {
-        public ManifestsViewModel(IManifestService service)
-        {
-            Task.Factory.StartNew(() => service.InvokeAPIASync("")).ContinueWith((results) =>
-            {
-                AllManifests = results.Result.Result.manifestMasterview;
-            });
-        }
+	public class ManifestsViewModel : MvxViewModel
+	{
+		public ManifestsViewModel (IManifestService service)
+		{
+			Task.Factory.StartNew (() => service.InvokeAPIASync ("")).ContinueWith ((results) => {
+				AllManifests = results.Result.Result.manifestMasterview;
+			});
+		}
 
-        private List<ManifestMasterViewModel> _allManifests;
-        public List<ManifestMasterViewModel> AllManifests
-        {
-            get { return _allManifests; }
-            set { _allManifests = value; RaisePropertyChanged(() => AllManifests); }
-        }
+		private List<ManifestMasterViewModel> _allManifests;
+
+		public List<ManifestMasterViewModel> AllManifests {
+			get { return _allManifests; }
+			set {
+				_allManifests = value;
+				RaisePropertyChanged (() => AllManifests);
+			}
+		}
 
 		private MvxCommand _nextScreenCommand;
 
-        public ICommand NextScreenCommand
-        {
-            get
-            {
-                _nextScreenCommand = _nextScreenCommand ?? new MvxCommand(DoNextScreenCommand);
-                return _nextScreenCommand;
-            }
-        }
+		public ICommand NextScreenCommand {
+			get {
+				// _nextScreenCommand = _nextScreenCommand ?? new MvxCommand(DoNextScreenCommand);
+				//return _nextScreenCommand;
+				return new MvxCommand<ManifestMasterViewModel> (item => ShowViewModel<OfficesViewModel> (new OfficesViewModel.Nav (){ Id = item.Id }));
+			}
+		}
 
-		private void DoNextScreenCommand()
-        {
-            ShowViewModel<OfficesViewModel>();
-        }
+//		private void DoNextScreenCommand ()
+//		{
+//			ShowViewModel<OfficesViewModel> ();
+//		}
 
-    }
+	}
 }
