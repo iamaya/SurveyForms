@@ -80,6 +80,7 @@
     <Compile Include="ViewModels\OfficeDetailsViewModel.cs" />
     <Compile Include="ViewModels\OfficesViewModel.cs" />
     <Compile Include="ViewModels\ManifestsViewModel.cs" />
+    <Compile Include="ViewModels\ProductDetailsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">

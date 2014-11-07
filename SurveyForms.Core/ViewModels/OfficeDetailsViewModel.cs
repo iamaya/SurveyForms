@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace SurveyForms.Core.ViewModels
 {
@@ -33,6 +34,13 @@ namespace SurveyForms.Core.ViewModels
 			public int Id {
 				get;
 				set;
+			}
+
+		}
+
+		public ICommand NextScreenCommand {
+			get {
+				return new MvxCommand<ProductDetail> (item => ShowViewModel<ProductDetailsViewModel> (new ProductDetailsViewModel.Nav (){ Id = item.ID, Id_ManifestDetail = item.ID_ManifestDetail }));
 			}
 		}
 

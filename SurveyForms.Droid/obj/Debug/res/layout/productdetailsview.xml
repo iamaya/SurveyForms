@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:local="http://schemas.android.com/apk/res/SurveyForms.Droid" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"><!--    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        local:MvxBind="Text AllOfficeDetails.Company" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        local:MvxBind="Text AllOfficeDetails.ContactFirstName" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        local:MvxBind="Text AllOfficeDetails.ContactLastName" />
+    <Mvx.MvxListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        local:MvxBind="ItemsSource AllOfficeDetails.ProductDetails; ItemClick NextScreenCommand"
+        local:MvxItemTemplate="@layout/item_officedetailsview" />--></LinearLayout>

@@ -3,6 +3,7 @@ SurveyForms.Droid.Views.FirstView;surveyforms.droid.views.FirstView
 SurveyForms.Droid.Views.OfficeDetailsView;surveyforms.droid.views.OfficeDetailsView
 SurveyForms.Droid.Views.OfficesView;surveyforms.droid.views.OfficesView
 SurveyForms.Droid.Views.ManifestsView;surveyforms.droid.views.ManifestsView
+SurveyForms.Droid.Views.ProductDetailsView;surveyforms.droid.views.ProductDetailsView
 Cirrious.CrossCore.Droid.MvxJavaContainer;cirrious.crosscore.droid.MvxJavaContainer
 Cirrious.CrossCore.Droid.MvxJavaContainer`1;cirrious.crosscore.droid.MvxJavaContainer_1
 Cirrious.CrossCore.Droid.MvxReplaceableJavaContainer;cirrious.crosscore.droid.MvxReplaceableJavaContainer

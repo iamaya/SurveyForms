@@ -77,7 +77,8 @@ containing a value of this type.
         public static final int manifestsview=0x7f030004;
         public static final int officedetailsview=0x7f030005;
         public static final int officesview=0x7f030006;
-        public static final int splashscreen=0x7f030007;
+        public static final int productdetailsview=0x7f030007;
+        public static final int splashscreen=0x7f030008;
     }
     public static final class string {
         public static final int ApplicationName=0x7f060001;

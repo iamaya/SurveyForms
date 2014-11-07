@@ -12,6 +12,7 @@
     <activity android:label="Office Details" android:name="surveyforms.droid.views.OfficeDetailsView" />
     <activity android:label="Offices" android:name="surveyforms.droid.views.OfficesView" />
     <activity android:label="Manifests" android:name="surveyforms.droid.views.ManifestsView" />
+    <activity android:label="Product Details" android:name="surveyforms.droid.views.ProductDetailsView" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="SurveyForms.Droid.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
