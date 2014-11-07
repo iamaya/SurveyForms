@@ -27,7 +27,7 @@ namespace SurveyForms.Core.ViewModels
             set { _allManifests = value; RaisePropertyChanged(() => AllManifests); }
         }
 
-        private MvxCommand _nextScreenCommand;
+		private MvxCommand _nextScreenCommand;
 
         public ICommand NextScreenCommand
         {
@@ -38,7 +38,7 @@ namespace SurveyForms.Core.ViewModels
             }
         }
 
-        private void DoNextScreenCommand()
+		private void DoNextScreenCommand()
         {
             ShowViewModel<OfficesViewModel>();
         }
