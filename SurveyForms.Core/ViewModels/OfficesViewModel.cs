@@ -30,20 +30,12 @@ namespace SurveyForms.Core.ViewModels
 			}
 		}
 
-		private MvxCommand _nextScreenCommand;
-
 		public ICommand NextScreenCommand {
 			get {
-				_nextScreenCommand = _nextScreenCommand ?? new MvxCommand (DoNextScreenCommand);
-				return _nextScreenCommand;
+				return new MvxCommand<ManifestDetail> (item => ShowViewModel<OfficeDetailsViewModel> (new OfficeDetailsViewModel.Nav (){ Id = item.ID }));
 			}
 		}
 
-		private void DoNextScreenCommand ()
-		{
-			ShowViewModel<OfficeDetailsViewModel> ();
-		}
-			
 		public class Nav
 		{
 			public int Id {
@@ -54,15 +46,10 @@ namespace SurveyForms.Core.ViewModels
 
 		public void Init (Nav navigation)
 		{
-
-			Task.Factory.StartNew(() => _service.InvokeAPIASync(navigation.Id.ToString()))
-			                .ContinueWith((results) =>
-			                {
-			                    AllOffices = results.Result.Result.manifestdetails;
-			                });
-
-		//	_service.InvokeAPIASync (navigation.Id.ToString());
-
+			Task.Factory.StartNew (() => _service.InvokeAPIASync (navigation.Id.ToString ()))
+			                .ContinueWith ((results) => {
+				AllOffices = results.Result.Result.manifestdetails;
+			});
 		}
 	}
 }

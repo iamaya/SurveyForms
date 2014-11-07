@@ -29,7 +29,7 @@ namespace SurveyForms.Core.ViewModels
 			}
 		}
 
-		private MvxCommand _nextScreenCommand;
+	//	private MvxCommand _nextScreenCommand;
 
 		public ICommand NextScreenCommand {
 			get {

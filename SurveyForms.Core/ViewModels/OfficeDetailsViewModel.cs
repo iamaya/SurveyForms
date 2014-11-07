@@ -12,13 +12,12 @@ namespace SurveyForms.Core.ViewModels
 {
     public class OfficeDetailsViewModel : MvxViewModel
     {
+		private readonly IOfficeDetailsService _service;
+
+
         public OfficeDetailsViewModel(IOfficeDetailsService service)
         {
-            Task.Factory.StartNew(() => service.InvokeAPIASync(""))
-                .ContinueWith((results) =>
-                {
-                    AllOfficeDetails = results.Result.Result;
-                });
+			_service = service;
         }
 
         private ManifestDetail _allOfficeDetails;
@@ -27,5 +26,24 @@ namespace SurveyForms.Core.ViewModels
             get { return _allOfficeDetails; }
             set { _allOfficeDetails= value; RaisePropertyChanged(() => AllOfficeDetails); }
         }
+
+
+		public class Nav
+		{
+			public int Id {
+				get;
+				set;
+			}
+		}
+
+
+		public void Init (Nav navigation)
+		{
+			Task.Factory.StartNew (() => _service.InvokeAPIASync (navigation.Id.ToString ()))
+				.ContinueWith ((results) => {
+					AllOfficeDetails = results.Result.Result;
+				});
+		}
+
     }
 }
