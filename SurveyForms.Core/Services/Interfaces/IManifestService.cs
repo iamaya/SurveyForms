@@ -10,5 +10,9 @@ namespace SurveyForms.Core.Services
     public interface IManifestService
     {
         Task<ManifestZonesPagedViewModel> InvokeAPIASync(string data);
+
+
+		bool UploadPicture (byte[] picturestream, string metadata, string info);
+
     }
 }

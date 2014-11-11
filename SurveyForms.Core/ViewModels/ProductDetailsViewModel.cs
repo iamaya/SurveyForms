@@ -7,17 +7,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Cirrious.MvvmCross.Plugins.PictureChooser;
 
 namespace SurveyForms.Core.ViewModels
 {
     public class ProductDetailsViewModel : MvxViewModel
     {
 		private readonly IOfficeDetailsService _service;
+		private readonly IMvxPictureChooserTask _pictureChooserTask;
 
-
-		public ProductDetailsViewModel(IOfficeDetailsService service)
+		public ProductDetailsViewModel(IOfficeDetailsService service, IMvxPictureChooserTask pictureChooserTask)
 		{
 			_service = service;
+			_pictureChooserTask = pictureChooserTask;
 		}
 
 		private ManifestDetail _manifestDetails;
@@ -33,6 +36,34 @@ namespace SurveyForms.Core.ViewModels
 			get { return _productDetails; }
 			set { _productDetails= value; RaisePropertyChanged(() => ProductDetails); }
 		}
+
+		public ICommand HandleAddPicture {
+			get{ 
+				//return new MvxCommand (()=>{});
+				return new MvxCommand (
+					()=>{_pictureChooserTask
+							.ChoosePictureFromLibrary(800,90, (
+								(System.IO.Stream obj) => {
+									// To Do
+								}), ()=>{}); });
+			}
+
+		}
+
+		public ICommand HandleShowPictures {
+			get{ 
+				return new MvxCommand (()=>{});
+			}
+
+		}
+
+		public ICommand HandleShowVisits {
+			get{ 
+				return new MvxCommand (()=>{});
+			}
+
+		}
+
 			
 		public class Nav
 		{

@@ -39,5 +39,14 @@ namespace SurveyForms.Core.Services
             var returnJson = response.Content.ReadAsStringAsync().Result;
             return JsonConvert.DeserializeObject<ManifestZonesPagedViewModel>(returnJson);
         }
+
+		public bool UploadPicture(byte[] picturestream, string metadata, string info)	
+		{
+
+
+
+			return true;
+		}
+
     }
 }

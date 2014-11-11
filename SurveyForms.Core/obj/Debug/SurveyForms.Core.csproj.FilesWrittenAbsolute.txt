@@ -27,3 +27,4 @@
 /Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/System.Text.RegularExpressions.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/System.Reflection.Primitives.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/System.Text.Encoding.dll
+/Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/Cirrious.MvvmCross.Plugins.PictureChooser.dll

@@ -1,0 +1,44 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SurveyForms.Core/Helpers/BlobHelper.cs">
+    <Files>
+      <File FileName="SurveyForms.Core/ViewModels/ProductDetailsViewModel.cs" Line="19" Column="19" />
+      <File FileName="SurveyForms.Core/Services/ManifestsService.cs" Line="4" Column="4" />
+      <File FileName="SurveyForms.Core/Services/Interfaces/IManifestService.cs" Line="22" Column="22" />
+      <File FileName="SurveyForms.Core/Helpers/BlobHelper.cs" Line="16" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="SurveyForms.Core" expanded="True">
+            <Node name="References" expanded="True">
+              <Node name="From Packages" expanded="True" />
+            </Node>
+            <Node name="Packages" expanded="True" selected="True" />
+            <Node name="Helpers" expanded="True" />
+            <Node name="Services" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+            </Node>
+            <Node name="ViewModels" expanded="True" />
+          </Node>
+          <Node name="SurveyForms.Droid" expanded="True">
+            <Node name="Resources" expanded="True">
+              <Node name="layout" expanded="True" />
+            </Node>
+            <Node name="Views" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="SurveyForms.Core/Services/OfficesService.cs" line="23" offsetX="654" offsetY="330" expression="data" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.SurveyForms.Droid MonoForAntroid.PreferredDevice="Nexus 4" />
+</Properties>

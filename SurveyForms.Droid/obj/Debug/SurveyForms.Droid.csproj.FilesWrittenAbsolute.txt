@@ -43,3 +43,5 @@
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Text.RegularExpressions.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Diagnostics.Tools.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/layout/productdetailsview.xml
+/Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/Cirrious.MvvmCross.Plugins.PictureChooser.dll
+/Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/Cirrious.MvvmCross.Plugins.PictureChooser.Droid.dll
