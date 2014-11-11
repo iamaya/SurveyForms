@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using SurveyForms.Core.Helpers;
 
 namespace SurveyForms.Core.Services
 {
@@ -43,5 +44,13 @@ namespace SurveyForms.Core.Services
             var returnJson = response.Content.ReadAsStringAsync().Result;
             return JsonConvert.DeserializeObject<ManifestDetail>(returnJson);
         }
+
+		public bool UploadPicture(byte[] picturestream, string metadata, string info, string filename)	
+		{
+			BlobHelper blobHelper = new BlobHelper ();
+			blobHelper.UploadToBlob (picturestream, filename);
+
+			return true;
+		}
     }
 }

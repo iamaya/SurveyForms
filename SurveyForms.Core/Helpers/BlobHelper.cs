@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.WindowsAzure.Storage;
 
 namespace SurveyForms.Core.Helpers
 {
@@ -8,13 +9,33 @@ namespace SurveyForms.Core.Helpers
 		public BlobHelper ()
 		{
 		}
+		private static string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=ahpictures;AccountKey=YQO0gAISadL5+zqs//snB8olPtWaWuFE0O2avGmRX1rimt/9vnL/R3CPhjygak1bGe93eJPVrb/Bry5ButdxbQ==";
 
+		//private static string blobpath = "https://ahpictures.blob.core.windows.net/" ;
+		private static string BlobContainer = "devcontainer/" ;
+
+
+		public bool UploadToBlob(byte[] stream, string filename)
+		{
+			try {
+				var storageAccount = CloudStorageAccount.Parse (storageConnectionString);
+				var blobStorage = storageAccount.CreateCloudBlobClient ();
+				
+				CloudBlobContainer container = blobStorage.GetContainerReference (BlobContainer);
+				container = this.getCloudBlobContainer (container, 5);
+				
+				CloudBlockBlob blob = container.GetBlockBlobReference (filename);
+				blob.Properties.ContentType = "image/jpeg";
+				
+				blob.UploadFromByteArray (stream, 0, stream.GetUpperBound (0));
+			} catch (Exception) {
+				return false;
+			}
+			return true;
+		}
 
 		public string DownloadBlobfromAzure()
 		{
-
-			string storageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnection"].ConnectionString;
-
 			// Create the storage account with the connection string.
 			CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);
 
@@ -22,7 +43,7 @@ namespace SurveyForms.Core.Helpers
 			CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
 			// Get a reference to the container for which shared access signature will be created.
-			CloudBlobContainer container = blobClient.GetContainerReference(ConfigurationManager.AppSettings["BlobContainer"].ToString().Replace("/", ""));
+			CloudBlobContainer container = blobClient.GetContainerReference(BlobContainer.Replace("/", ""));
 			//CloudBlobContainer container = blobClient.GetContainerReference("privatetest");
 
 			//container.CreateIfNotExists();
@@ -61,7 +82,7 @@ namespace SurveyForms.Core.Helpers
 		public string DownloadBlobfromAzure(string BlobContainer)
 		{
 
-			string storageConnectionString = ConfigurationManager.ConnectionStrings["StorageConnection"].ConnectionString;
+
 
 			// Create the storage account with the connection string.
 			CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);

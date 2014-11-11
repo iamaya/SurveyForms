@@ -12,7 +12,6 @@ namespace SurveyForms.Core.Services
         Task<ManifestZonesPagedViewModel> InvokeAPIASync(string data);
 
 
-		bool UploadPicture (byte[] picturestream, string metadata, string info);
 
     }
 }

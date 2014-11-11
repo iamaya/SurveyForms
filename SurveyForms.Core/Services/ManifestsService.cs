@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SurveyForms.Core.Services
 {
     public class ManifestsService:IManifestService
@@ -40,13 +41,7 @@ namespace SurveyForms.Core.Services
             return JsonConvert.DeserializeObject<ManifestZonesPagedViewModel>(returnJson);
         }
 
-		public bool UploadPicture(byte[] picturestream, string metadata, string info)	
-		{
 
-
-
-			return true;
-		}
 
     }
 }
