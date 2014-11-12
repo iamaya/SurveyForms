@@ -10,8 +10,5 @@ namespace SurveyForms.Core.Services
     public interface IManifestService
     {
         Task<ManifestZonesPagedViewModel> InvokeAPIASync(string data);
-
-
-
     }
 }

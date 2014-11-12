@@ -26,20 +26,19 @@
         android:id="@+id/editText1"
         android:minWidth="25px"
         local:MvxBind="Text ProductDetails.Barcode" />
-<!--        <TextView
-            android:layout_marginTop="25dp" 
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Comments"
-            android:textColor="#ff0cbfcd" />
-
-		<EditText
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/editText1"
-			android:minWidth="25px"
-			local:MvxBind="Text ProductDetails.Comments"   />-->
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Comments"
+        android:textColor="#ff0cbfcd" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:minWidth="25px"
+        local:MvxBind="Text ProductDetails.Comments" />
     <TextView
         android:layout_marginTop="25dp"
         android:layout_width="fill_parent"
@@ -57,20 +56,11 @@
         android:text="Show Pictures"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnShowPictures"
-        local:MvxBind="Click HandleShowPictures" />
+        android:id="@+id/button1" />
     <Button
         android:layout_marginTop="25dp"
         android:text="Add Picture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAddPicture"
-        local:MvxBind="Click HandleAddPicture" />
-    <Button
-        android:layout_marginTop="25dp"
-        android:text="Show Visits"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnAddVisit"
-        local:MvxBind="Click HandleShowVisits" />
+        android:id="@+id/button2" />
 </LinearLayout>

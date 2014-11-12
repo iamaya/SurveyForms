@@ -81,7 +81,6 @@
     <Compile Include="ViewModels\OfficesViewModel.cs" />
     <Compile Include="ViewModels\ManifestsViewModel.cs" />
     <Compile Include="ViewModels\ProductDetailsViewModel.cs" />
-    <Compile Include="Helpers\BlobHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -102,18 +101,9 @@
     <Reference Include="System.Net.Http.Primitives">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\portable-net45+win8+wpa81\System.Net.Http.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrious.MvvmCross.Plugins.PictureChooser">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.PictureChooser.3.2.1\lib\portable-win+net45+wp8+win8+wpa81+MonoTouch+MonoAndroid\Cirrious.MvvmCross.Plugins.PictureChooser.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="Microsoft.WindowsAzure.Storage">
-      <HintPath>..\packages\WindowsAzure.Storage.4.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
-  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
     <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
     <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
@@ -125,7 +115,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
-    <Folder Include="Helpers\" />
-  </ItemGroup>
 </Project>

@@ -7,7 +7,6 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace SurveyForms.Core.Services
 {
     public class ManifestsService:IManifestService
@@ -40,8 +39,5 @@ namespace SurveyForms.Core.Services
             var returnJson = response.Content.ReadAsStringAsync().Result;
             return JsonConvert.DeserializeObject<ManifestZonesPagedViewModel>(returnJson);
         }
-
-
-
     }
 }

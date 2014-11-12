@@ -11,7 +11,6 @@
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/layout/item_officesview.xml
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/layout/officedetailsview.xml
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/layout/item_officedetailsview.xml
-/Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/layout/productdetailsview.xml
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/values/strings.xml
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/drawable/icon.png
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/values/splashstyle.xml
@@ -35,14 +34,12 @@
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Net.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Windows.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Xml.Serialization.dll
-/Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/Cirrious.MvvmCross.Plugins.PictureChooser.dll
-/Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/Cirrious.MvvmCross.Plugins.PictureChooser.Droid.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/SurveyForms.Core.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/SurveyForms.Core.dll.mdb
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/Newtonsoft.Json.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/Newtonsoft.Json.xml
-/Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/Microsoft.WindowsAzure.Storage.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Dynamic.Runtime.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Text.Encoding.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Text.RegularExpressions.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/System.Diagnostics.Tools.dll
+/Users/imaya/Projects/SurveyForms/SurveyForms.Droid/obj/Debug/res/layout/productdetailsview.xml
