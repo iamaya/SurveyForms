@@ -8,6 +8,8 @@
 /Users/imaya/Projects/SurveyForms/packages/MvvmCross.HotTuna.CrossCore.3.2.1/lib/MonoAndroid/Cirrious.MvvmCross.Localization.dll
 /Users/imaya/Projects/SurveyForms/packages/Microsoft.Net.Http.2.2.28/lib/monoandroid/System.Net.Http.Extensions.dll
 /Users/imaya/Projects/SurveyForms/packages/Microsoft.Net.Http.2.2.28/lib/monoandroid/System.Net.Http.Primitives.dll
+/Users/imaya/Projects/SurveyForms/packages/MvvmCross.HotTuna.Plugin.PictureChooser.3.2.1/lib/MonoAndroid/Cirrious.MvvmCross.Plugins.PictureChooser.dll
+/Users/imaya/Projects/SurveyForms/packages/MvvmCross.HotTuna.Plugin.PictureChooser.3.2.1/lib/MonoAndroid/Cirrious.MvvmCross.Plugins.PictureChooser.Droid.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/SurveyForms.Core.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Collections.Concurrent.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Collections.dll
@@ -56,3 +58,4 @@
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Xml.XDocument.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Xml.XmlSerializer.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Droid/bin/Debug/Newtonsoft.Json.dll
+/Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/Microsoft.WindowsAzure.Storage.dll

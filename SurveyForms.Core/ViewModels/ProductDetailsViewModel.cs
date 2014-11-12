@@ -7,33 +7,97 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Cirrious.MvvmCross.Plugins.PictureChooser;
+using System.IO;
 
 namespace SurveyForms.Core.ViewModels
 {
-    public class ProductDetailsViewModel : MvxViewModel
-    {
+	public class ProductDetailsViewModel : MvxViewModel
+	{
 		private readonly IOfficeDetailsService _service;
+		private readonly IMvxPictureChooserTask _pictureChooserTask;
 
-
-		public ProductDetailsViewModel(IOfficeDetailsService service)
+		public ProductDetailsViewModel (IOfficeDetailsService service, IMvxPictureChooserTask pictureChooserTask)
 		{
 			_service = service;
+			_pictureChooserTask = pictureChooserTask;
 		}
 
 		private ManifestDetail _manifestDetails;
-		public ManifestDetail ManifestDetails
-        {
+
+		public ManifestDetail ManifestDetails {
 			get { return _manifestDetails; }
-			set { _manifestDetails= value; }
-        }
+			set { _manifestDetails = value; }
+		}
 
 		private ProductDetail _productDetails;
-		public ProductDetail ProductDetails
-		{
+
+		public ProductDetail ProductDetails {
 			get { return _productDetails; }
-			set { _productDetails= value; RaisePropertyChanged(() => ProductDetails); }
+			set {
+				_productDetails = value;
+				RaisePropertyChanged (() => ProductDetails);
+			}
 		}
-			
+
+		public ICommand HandleAddPicture {
+			get { 
+				//return new MvxCommand (()=>{});
+				return new MvxCommand (
+					() => {
+						_pictureChooserTask
+							.ChoosePictureFromLibrary (800, 95, 
+								((System.IO.Stream stream) => {
+									var memstream = new MemoryStream ();
+									stream.CopyTo (memstream);
+									PictureBytes = memstream.ToArray ();
+
+									var result = _service.UploadPicture(PictureBytes,"","","NewFile");
+									if(result)
+									{
+
+									}
+									else
+									{
+
+									}
+
+								}), () => {
+								});
+					});
+			}
+
+		}
+
+		private byte[] _picturebytes;
+
+		public byte[] PictureBytes {
+			get { return _picturebytes; }
+			set {
+				_picturebytes = value;
+				RaisePropertyChanged (() => PictureBytes);
+			}
+		}
+
+
+		public ICommand HandleShowPictures {
+			get { 
+				return new MvxCommand (() => {
+				});
+			}
+
+		}
+
+		public ICommand HandleShowVisits {
+			get { 
+				return new MvxCommand (() => {
+				});
+			}
+
+		}
+
+
 		public class Nav
 		{
 			public int Id {
@@ -46,10 +110,10 @@ namespace SurveyForms.Core.ViewModels
 				set;
 			}
 
-//			public ProductDetail productDetail {
-//				get;
-//				set;
-//			}
+			//			public ProductDetail productDetail {
+			//				get;
+			//				set;
+			//			}
 		}
 
 		public void Init (Nav navigation)
@@ -62,5 +126,5 @@ namespace SurveyForms.Core.ViewModels
 
 
 		}
-    }
+	}
 }

@@ -11,5 +11,6 @@ namespace SurveyForms.Core.Services
     public interface IOfficeDetailsService
     {
         Task<ManifestDetail> InvokeAPIASync(string data);
+		bool UploadPicture (byte[] picturestream, string metadata, string info, string filename);
     }
 }

@@ -77,6 +77,8 @@ class MonoPackageManager_Resources {
 		"Cirrious.MvvmCross.Localization.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
+		"Cirrious.MvvmCross.Plugins.PictureChooser.dll",
+		"Cirrious.MvvmCross.Plugins.PictureChooser.Droid.dll",
 		"SurveyForms.Core.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Collections.dll",
@@ -125,6 +127,7 @@ class MonoPackageManager_Resources {
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
 		"Newtonsoft.Json.dll",
+		"Microsoft.WindowsAzure.Storage.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
