@@ -86,6 +86,12 @@
     <Reference Include="Cirrious.MvvmCross.Plugins.PictureChooser.Droid">
       <HintPath>..\packages\MvvmCross.HotTuna.Plugin.PictureChooser.3.2.1\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.PictureChooser.Droid.dll</HintPath>
     </Reference>
+    <Reference Include="Worklight.Android">
+      <HintPath>..\Components\ibm-worklight-1.0.0\lib\android\Worklight.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Worklight.Xamarin.Android">
+      <HintPath>..\Components\ibm-worklight-1.0.0\lib\android\Worklight.Xamarin.Android.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DebugTrace.cs" />
@@ -163,4 +169,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <XamarinComponentReference Include="ibm-worklight">
+      <Version>1.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
 </Project>

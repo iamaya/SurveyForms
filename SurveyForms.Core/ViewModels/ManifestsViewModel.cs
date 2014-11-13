@@ -35,7 +35,7 @@ namespace SurveyForms.Core.ViewModels
 			get {
 				// _nextScreenCommand = _nextScreenCommand ?? new MvxCommand(DoNextScreenCommand);
 				//return _nextScreenCommand;
-				return new MvxCommand<ManifestMasterViewModel> (item => ShowViewModel<OfficesViewModel> (new OfficesViewModel.Nav (){ Id = item.Id }));
+				return new MvxCommand<ManifestMasterViewModel> (item => ShowViewModel<OfficesViewModel> (new OfficesViewModel.Nav (){ Id = item.Id_ServiceZone }));
 			}
 		}
 

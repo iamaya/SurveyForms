@@ -26,6 +26,7 @@ namespace SurveyForms.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Worklight.Xamarin.Android.Resource.String.library_name = global::SurveyForms.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -84,32 +85,35 @@ namespace SurveyForms.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int MvxBindingTagUnique = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int MvxBindingTagUnique = 2131034112;
 			
-			// aapt resource value: 0x7f040007
-			public const int btnAddPicture = 2130968583;
+			// aapt resource value: 0x7f050008
+			public const int btnAddPicture = 2131034120;
 			
-			// aapt resource value: 0x7f040008
-			public const int btnAddVisit = 2130968584;
+			// aapt resource value: 0x7f050009
+			public const int btnAddVisit = 2131034121;
 			
-			// aapt resource value: 0x7f040006
-			public const int btnShowPictures = 2130968582;
+			// aapt resource value: 0x7f050007
+			public const int btnShowPictures = 2131034119;
 			
-			// aapt resource value: 0x7f040005
-			public const int button1 = 2130968581;
+			// aapt resource value: 0x7f050005
+			public const int button1 = 2131034117;
 			
-			// aapt resource value: 0x7f040004
-			public const int editText1 = 2130968580;
+			// aapt resource value: 0x7f050004
+			public const int editText1 = 2131034116;
 			
-			// aapt resource value: 0x7f040003
-			public const int linearLayout1 = 2130968579;
+			// aapt resource value: 0x7f050003
+			public const int linearLayout1 = 2131034115;
 			
-			// aapt resource value: 0x7f040001
-			public const int listView1 = 2130968577;
+			// aapt resource value: 0x7f050006
+			public const int linearLayout2 = 2131034118;
 			
-			// aapt resource value: 0x7f040002
-			public const int textView1 = 2130968578;
+			// aapt resource value: 0x7f050001
+			public const int listView1 = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int textView1 = 2131034114;
 			
 			static Id()
 			{
@@ -164,11 +168,14 @@ namespace SurveyForms.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int ApplicationName = 2131099649;
+			// aapt resource value: 0x7f040002
+			public const int ApplicationName = 2130968578;
 			
-			// aapt resource value: 0x7f060000
-			public const int Hello = 2131099648;
+			// aapt resource value: 0x7f040001
+			public const int Hello = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int library_name = 2130968576;
 			
 			static String()
 			{
@@ -183,8 +190,8 @@ namespace SurveyForms.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int Theme_Splash = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int Theme_Splash = 2131099648;
 			
 			static Style()
 			{

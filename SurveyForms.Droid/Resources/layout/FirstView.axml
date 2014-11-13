@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:textColor="#ff33f457"
+        android:textColor="#ff1b77db"
         android:background="#ffede6e6" />
     <LinearLayout
         android:orientation="horizontal"

@@ -28,14 +28,12 @@ namespace SurveyForms.Core.ViewModels
             set { _allOfficeDetails= value; RaisePropertyChanged(() => AllOfficeDetails); }
         }
 
-
 		public class Nav
 		{
 			public int Id {
 				get;
 				set;
 			}
-
 		}
 
 		public ICommand NextScreenCommand {

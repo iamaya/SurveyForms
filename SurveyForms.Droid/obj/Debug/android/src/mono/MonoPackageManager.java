@@ -79,6 +79,8 @@ class MonoPackageManager_Resources {
 		"System.Net.Http.Primitives.dll",
 		"Cirrious.MvvmCross.Plugins.PictureChooser.dll",
 		"Cirrious.MvvmCross.Plugins.PictureChooser.Droid.dll",
+		"Worklight.Android.dll",
+		"Worklight.Xamarin.Android.dll",
 		"SurveyForms.Core.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Collections.dll",

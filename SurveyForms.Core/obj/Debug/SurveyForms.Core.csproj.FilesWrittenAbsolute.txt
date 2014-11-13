@@ -29,3 +29,8 @@
 /Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/System.Text.Encoding.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/Microsoft.WindowsAzure.Storage.dll
 /Users/imaya/Projects/SurveyForms/SurveyForms.Core/bin/Debug/Cirrious.MvvmCross.Plugins.PictureChooser.dll
+/Users/imaya/Projects/surveyforms/SurveyForms.Core/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/imaya/Projects/surveyforms/SurveyForms.Core/bin/Debug/SurveyForms.Core.dll.mdb
+/Users/imaya/Projects/surveyforms/SurveyForms.Core/bin/Debug/SurveyForms.Core.dll
+/Users/imaya/Projects/surveyforms/SurveyForms.Core/obj/Debug/SurveyForms.Core.dll
+/Users/imaya/Projects/surveyforms/SurveyForms.Core/obj/Debug/SurveyForms.Core.dll.mdb
