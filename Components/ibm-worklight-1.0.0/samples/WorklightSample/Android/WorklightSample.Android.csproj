@@ -106,4 +106,10 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\wlclient.properties" />
   </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="ibm-worklight">
+      <Version>1.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
 </Project>

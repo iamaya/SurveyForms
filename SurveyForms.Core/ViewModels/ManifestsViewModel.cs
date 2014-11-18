@@ -8,15 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
+using Worklight.Xamarin.Android;
+
 namespace SurveyForms.Core.ViewModels
 {
 	public class ManifestsViewModel : MvxViewModel
 	{
+		private WorklightClient _client;
+
 		public ManifestsViewModel (IManifestService service)
 		{
 			Task.Factory.StartNew (() => service.InvokeAPIASync ("")).ContinueWith ((results) => {
 				AllManifests = results.Result.Result.manifestMasterview;
 			});
+
+
 		}
 
 		private List<ManifestMasterViewModel> _allManifests;

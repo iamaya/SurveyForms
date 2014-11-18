@@ -15,9 +15,12 @@ namespace SurveyForms.Core.ViewModels
 	{
 		private readonly IOfficesService _service;
 
+		//private Worklight _client;
+
 		public OfficesViewModel (IOfficesService service)
 		{
 			_service = service;
+			//_client = new Worklight ();
 		}
 
 		private List<ManifestDetail> _allOffices;

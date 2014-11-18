@@ -175,4 +175,7 @@
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\wlclient.properties" />
+  </ItemGroup>
 </Project>

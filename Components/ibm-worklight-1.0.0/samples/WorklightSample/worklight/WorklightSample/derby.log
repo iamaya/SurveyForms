@@ -1,0 +1,20 @@
+----------------------------------------------------------------
+Thu Nov 13 12:38:24 EST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.3 - (1326460): instance a816c00e-0149-aa3c-1360-00000e980d40 
+on database directory /Users/imaya/.worklight/6.2.0/server/derby/WorklightSample/WRKLGHT  with class loader AntClassLoader[/Applications/IBM/Worklight-CLI/worklight-cli/node_modules/generator-worklight-server/lib/worklight-ant-deployer.jar] 
+Loaded from file:/Applications/IBM/Worklight-CLI/worklight-cli/node_modules/generator-worklight-server/lib/worklight-ant-deployer.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_72-b14
+user.dir=/Users/imaya/Projects/surveyforms/components/ibm-worklight-1.0.0/samples/WorklightSample/worklight/WorklightSample
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 13 12:38:24 EST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.3 - (1326460): instance 40348015-0149-aa3c-1360-00000e980d40 
+on database directory /Users/imaya/.worklight/6.2.0/server/derby/WorklightSample/WLREPORT  with class loader AntClassLoader[/Applications/IBM/Worklight-CLI/worklight-cli/node_modules/generator-worklight-server/lib/worklight-ant-deployer.jar] 
+Loaded from file:/Applications/IBM/Worklight-CLI/worklight-cli/node_modules/generator-worklight-server/lib/worklight-ant-deployer.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_72-b14
+user.dir=/Users/imaya/Projects/surveyforms/components/ibm-worklight-1.0.0/samples/WorklightSample/worklight/WorklightSample
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

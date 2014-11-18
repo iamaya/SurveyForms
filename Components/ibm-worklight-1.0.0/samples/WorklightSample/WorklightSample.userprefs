@@ -1,0 +1,18 @@
+﻿<Properties>
+  <DisabledProjects>
+    <String>iOS/WorklightSample.iOS.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleClient.cs">
+    <Files>
+      <File FileName="App.cs" Line="22" Column="22" />
+      <File FileName="Android/MainActivity.cs" Line="68" Column="68" />
+      <File FileName="Android/Assets/wlclient.properties" Line="1" Column="1" />
+      <File FileName="SampleClient.cs" Line="3" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

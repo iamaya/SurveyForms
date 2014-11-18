@@ -11,6 +11,8 @@ using Android.Views;
 using Android.Widget;
 using Cirrious.MvvmCross.Droid.Views;
 
+using Worklight.Xamarin.Android;
+
 namespace SurveyForms.Droid.Views
 {
     [Activity(Label = "Manifests")]
